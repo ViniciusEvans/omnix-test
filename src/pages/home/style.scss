@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400&family=Nunito:wght@900&display=swap");
+.home {
+  .start-message {
+    @media screen and (min-width: 1024px) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      color: #fff;
+    }
+    .first--message {
+      font-family: Nunito, sans-serif;
+      color: #003f92;
+      font-size: 2.25rem;
+      line-height: 2.5rem;
+      letter-spacing: 0.05em;
+      margin: 2rem;
+    }
+    .second--message {
+      font-family: Montserrat, "sans-serif";
+      margin: 2rem;
+      width: 70%;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+    .thrid--message {
+      font-weight: 900;
+      margin: 2rem;
+    }
+  }
+  .form-zone {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 15px 0 0;
+    margin-top: 10px;
+    width: 100%;
+    input {
+      @media screen and (min-width: 1024px) {
+        color: #ffff;
+        width: 30%;
+      }
+      width: 70%;
+      font-family: inherit;
+      border: 0;
+      border-bottom: 2px solid #9b9b9b;
+      outline: 0;
+      font-size: 1.3rem;
+      color: black;
+      padding: 7px 0;
+      background: transparent;
+
+      &:placeholder-shown ~ .cep-label {
+        font-size: 1.3rem;
+        cursor: text;
+        top: 20px;
+      }
+    }
+    button {
+      all: unset;
+      background-color: #003f92;
+      color: white;
+      padding: 0.5rem 1.6rem;
+      margin: 0.7rem;
+      border-radius: 2rem;
+      cursor: pointer;
+    }
+  }
+}
