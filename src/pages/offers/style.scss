@@ -1,0 +1,89 @@
+.offers {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  align-items: center;
+  justify-content: center;
+  .address {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    p {
+      @media screen and (min-width: 1024px) {
+        color: #fff;
+      }
+      font-family: Nunito, sans-serif;
+      color: #003f92;
+      font-size: 2rem;
+    }
+    span {
+      @media screen and (min-width: 1024px) {
+        color: #fff;
+      }
+    }
+  }
+  .offer-cards {
+    display: flex;
+    flex-wrap: wrap;
+    .card {
+      @media screen and (min-width: 800px) {
+        margin: 3rem;
+        transform: scale(1.2);
+      }
+      h1 {
+        color: #003f92;
+
+        font-family: Nunito, sans-serif;
+      }
+      .money {
+        color: #660099;
+      }
+      img {
+        height: 3rem;
+        @media screen and (min-width: 900px) {
+          height: 4rem;
+        }
+      }
+      border-radius: 1rem;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.035),
+        0px 0px 80px rgba(0, 0, 0, 0.07);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0.5rem;
+      padding: 1rem;
+      background-color: white;
+    }
+    .card-two {
+      position: relative;
+      [alt="promoção imagem"] {
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+    }
+  }
+  button {
+    all: unset;
+    background-color: #003f92;
+    color: white;
+    padding: 0.5rem 1.6rem;
+    margin: 0.7rem;
+    border-radius: 2rem;
+    cursor: pointer;
+  }
+  .back-home {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    @media screen and (min-width: 900px) {
+      bottom: 5%;
+      right: 10%;
+    }
+    button {
+      background-color: rgb(149, 32, 32);
+    }
+  }
+}
